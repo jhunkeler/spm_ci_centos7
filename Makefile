@@ -1,5 +1,5 @@
 REGISTRY=jhunkeler
-IMAGE=spm_ci_centos
+IMAGE=spm_ci_centos7
 TAG=$(shell git describe --tags | sed 's/\-/\./' | awk -F'-' '{ print $$1 }')
 TO_UPLOAD=$(REGISTRY)/$(IMAGE):$(TAG)
 TO_UPLOAD_LATEST=$(REGISTRY)/$(IMAGE):latest
