@@ -11,6 +11,8 @@ RUN yum install -y \
         file \
         which \
         rsync \
+        libarchive-devel \
+        bsdtar \
         tar \
         cmake3 \
         gcc \
