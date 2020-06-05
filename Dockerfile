@@ -3,6 +3,7 @@ RUN yum install -y epel-release && \
 	yum update -y && \
 	yum clean -y all
 RUN yum install -y \
+	git \
         make \
         patchelf \
         binutils \
